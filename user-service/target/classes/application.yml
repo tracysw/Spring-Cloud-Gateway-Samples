@@ -1,0 +1,21 @@
+server:
+  port: 8889
+
+spring:
+  application:
+    name: user-service
+  #main:
+  #  web-application-type: reactive
+  cloud:
+    gateway:
+     discovery:
+        locator:
+         enabled: true
+    nacos:
+      discovery:
+        server-addr: 192.168.10.160:8848 # Nacos 服务器地址
+        namespace:  insight_shaowei
+      config:
+        server-addr: 192.168.10.160:8848 # Nacos 配置中心地址
+        namespace:  insight_shaowei
+        file-extension: yaml

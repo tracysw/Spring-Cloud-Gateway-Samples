@@ -1,0 +1,14 @@
+server:
+  port: 8888
+spring:
+  application:
+    name: gateway-service
+  main:
+    web-application-type: reactive
+  cloud:
+    gateway:
+      routes:
+      - id: neo_route
+        uri: http://www.ityouknow.com
+        predicates:
+        - Path=/spring-cloud
