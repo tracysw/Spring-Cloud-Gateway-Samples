@@ -39,3 +39,4 @@ Accessing this address also shows the same effect: http://localhost:8888/user01/
 ## Environment Requirements
 
 - JDK1.8+
+- -Nacos 1.3.0 Server
